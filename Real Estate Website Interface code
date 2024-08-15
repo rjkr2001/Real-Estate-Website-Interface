@@ -1,0 +1,439 @@
+import React from 'react';
+import openplot from './openplot.png';
+import Button from 'react-bootstrap/Button';
+import './App.css';
+import Carousel from 'react-bootstrap/Carousel';
+import img3 from './img4.webp';
+import Form from 'react-bootstrap/Form';
+import { IoSearchSharp, IoCallOutline } from "react-icons/io5";
+import { FaRegSquarePlus, FaArrowRightLong } from "react-icons/fa6";
+import { GiSmartphone } from "react-icons/gi";
+import { CiLocationOn, CiYoutube } from "react-icons/ci";
+import { MdOutlineEmail } from "react-icons/md";
+import { SlSocialTwitter } from "react-icons/sl";
+import { FaPinterest, FaFacebook, FaInstagram } from "react-icons/fa";
+
+
+const Openplot = () => {
+  return (
+    <div className='container-fluid'>
+      <div className='row align-items-center'>
+        <div className='col-md-2 mt-3'>
+          <img src={openplot} alt='openplot' />
+        </div >
+        <div className='col-md-5'>
+
+        </div>
+        <div className='col-md-3 pt-3 d-flex justify-content-end'>
+          <a href='https:/www.openplot.com' className=''><FaRegSquarePlus /> List Your Property For Free</a>
+
+        </div>
+        <div className='col-md-2 d-flex justify-content-end'>
+          <Button className='rounded-5 mt-3' variant="primary">Signup or Login</Button>
+
+        </div>
+
+      </div>
+      <Carousel className='pt-3'>
+        <Carousel.Item>
+          <img
+            className="d-block  car"
+            src="https://res.cloudinary.com/dqky2x8gy/image/upload/v1700642842/imgc3_lbs411.jpg"
+            alt="img"
+          />
+          <Carousel.Caption>
+            <div style={{ marginTop: "200" }}>
+              <h1>The One-Stop Solution for all your Real Estate Property Needs</h1>
+              <p>
+                Openplot makes property administration simple and affordable for real estate business owners.
+              </p>
+            </div>
+
+            <div className='row search rounded-1'>
+              <div className='col-md-3'>
+                <div className='radio d-flex justify-content-around p-4'>
+                  <input type='radio' name='buy' />
+                  <label for='buy'>Buy</label>
+
+                  <input type='radio' name='rent' />
+                  <label for='rent'>Rent</label>
+                </div>
+              </div>
+              <div className='col-md-6 d-flex justify-content-around p-4'>
+                <Form.Select aria-label="Default select example">
+                  <option>Type Location or Pincode</option>
+                  <option value="1">No options</option>
+
+                </Form.Select>
+              </div>
+              <div className='col-md-3'>
+                <Button variant="primary" className='mt-4 rounded-3'><IoSearchSharp />  Search</Button>
+              </div>
+            </div>
+          </Carousel.Caption>
+
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block car"
+            src="https://res.cloudinary.com/dqky2x8gy/image/upload/v1700642709/img3_ahxkuw.webp"
+            alt="img"
+          />
+          <Carousel.Caption>
+            <h1>The One-Stop Solution for all your Real Estate Property Needs</h1>
+            <p>
+              Openplot makes property administration simple and affordable for real estate business owners.
+            </p>
+            <div className='row search rounded-1'>
+              <div className='col-md-3'>
+                <div className='radio d-flex justify-content-around p-4'>
+                  <input type='radio' name='buy' />
+                  <label for='buy'>Buy</label>
+
+                  <input type='radio' name='rent' />
+                  <label for='rent'>Rent</label>
+                </div>
+              </div>
+              <div className='col-md-6 d-flex justify-content-around p-4'>
+                <Form.Select aria-label="Default select example">
+                  <option>Type Location or Pincode</option>
+                  <option value="1">No options</option>
+
+                </Form.Select>
+              </div>
+              <div className='col-md-3'>
+                <Button variant="primary" className='mt-4 rounded-3'><IoSearchSharp />  Search</Button>
+              </div>
+            </div>
+          </Carousel.Caption>
+
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block car"
+            src={img3}
+            alt="img"
+          />
+          <Carousel.Caption>
+            <h1 style={{ marginTop: "-50px" }}>The One-Stop Solution for all your Real Estate Property Needs</h1>
+            <p>
+              Openplot makes property administration simple and affordable for real estate business owners.
+            </p>
+            <div className='row search rounded-1'>
+              <div className='col-md-3'>
+                <div className='radio d-flex justify-content-around p-4'>
+                  <input type='radio' name='buy' />
+                  <label for='buy'>Buy</label>
+
+                  <input type='radio' name='rent' />
+                  <label for='rent'>Rent</label>
+                </div>
+              </div>
+              <div className='col-md-6 d-flex justify-content-around p-4'>
+                <Form.Select aria-label="Default select example">
+                  <option>Type Location or Pincode</option>
+                  <option value="1">No options</option>
+
+                </Form.Select>
+              </div>
+              <div className='col-md-3'>
+                <Button variant="primary" className='mt-4 rounded-3'><IoSearchSharp />  Search</Button>
+              </div>
+            </div>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+      <div className='row txt mt-5'>
+        <h5>Newly Added <span className='text-danger'>Project</span>  Properties For Sale</h5>
+        <p className='text-secondary'>Regularly update the project listings as new information becomes available,
+          and ensure that the content is accurate and up-to-date.</p>
+      </div>
+      <div className='container-fluid'>
+        <div className='container bg1 pt-2 rounded-2'>
+          <div className='row txt mt-5'>
+            <h5>Explore Properties in Popular <span className='text-danger'>Telangana Cities</span></h5>
+            <p className='text-secondary'>Explore properties across popular cities in the state,
+              from residential to commercial and more.</p>
+          </div>
+          <div className='row m-4'>
+            <div className='col-md-12 d-flex'>
+              <div className='col-md-3 d-flex'>
+                <img className="im1" src="https://res.cloudinary.com/dqky2x8gy/image/upload/v1700714494/yadagiri_jis19i.jpg" />
+                <p className='txt p-4 text-primary'>Ranga Reddy
+                  <p className='text-secondary'>105 Properties</p>
+                </p>
+              </div>
+              <div className='col-md-3 d-flex'>
+                <img className="im1" src="https://res.cloudinary.com/dqky2x8gy/image/upload/v1700714504/hnk_p6dwut.jpg" />
+                <p className='txt p-4 text-primary'>Hanumakonda
+                  <p className='text-secondary'>97 Properties</p>
+                </p>
+              </div>
+              <div className='col-md-3 d-flex'>
+                <img className="im1" src="https://res.cloudinary.com/dqky2x8gy/image/upload/v1700714510/medchal_jj36wq.jpg" />
+                <p className='txt p-4 text-primary'>Medchal
+                  <p className='text-secondary'>55 Properties</p>
+                </p>
+              </div>
+              <div className='col-md-3 d-flex'>
+                <img className="im1" src="https://res.cloudinary.com/dqky2x8gy/image/upload/v1700714517/sangaredy_uz4e8v.jpg" />
+                <p className='txt p-4 text-primary'>Sanga Reddy
+                  <p className='text-secondary'>41 Properties</p>
+                </p>
+              </div>
+
+            </div>
+          </div>
+          <div className='row m-3'>
+            <div className='col-md-12 d-flex'>
+              <div className='col-md-3 d-flex'>
+                <img className="im1" src="https://res.cloudinary.com/dqky2x8gy/image/upload/v1700717276/hyd_ymapgu.jpg" />
+                <p className='txt p-4 text-primary'>Hyderabad
+                  <p className='text-secondary'>159 Properties</p>
+                </p>
+              </div>
+              <div className='col-md-3 d-flex'>
+                <img className="im1" src="https://res.cloudinary.com/dqky2x8gy/image/upload/v1700717277/medk_qygb1x.jpg" />
+                <p className='txt p-4 text-primary'>Medak
+                  <p className='text-secondary'>10 Properties</p>
+                </p>
+              </div>
+              <div className='col-md-3 d-flex'>
+                <img className="im1" src="https://res.cloudinary.com/dqky2x8gy/image/upload/v1700717277/mahubanager_khanll.jpg" />
+                <p className='txt p-4 text-primary'>Mahabubnagar
+                  <p className='text-secondary'>1 Properties</p>
+                </p>
+              </div>
+              <div className='col-md-3 d-flex'>
+                <img className="im1" src="https://res.cloudinary.com/dqky2x8gy/image/upload/v1700717276/knr_jblbay.jpg" />
+                <p className='txt p-4 text-primary'>Karimnagar
+                  <p className='text-secondary'>59 Properties</p>
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div className='container-fluid '>
+        <div className='container bg2 rounded-2 p-2'>
+          <div className='row txt mt-1'>
+            <h5>Browse by  <span className='text-danger'>BHK Choice</span> in the House</h5>
+            <p className='text-secondary'>Make your life easier with our choice.</p>
+          </div>
+          <div className='row'>
+            <div className='col-md-12 d-flex justify-content-between'>
+
+
+              <div className='col-md-2 d-flex bg-light m-2 p-3 rounded-2'>
+
+                <div className='col-md-4'>
+                  <h1 className='text-primary'>1</h1>
+                </div>
+                <div className='col-md-8 ml-2'>
+                  <p className='text-secondary'>BHK</p>
+                  <p className='text-secondary'>137 Properties</p>
+                </div>
+
+              </div>
+              <div className='col-md-2 d-flex bg-light m-2 p-3 rounded-2'>
+
+                <div className='col-md-4'>
+                  <h1 className='text-primary'>2</h1>
+                </div>
+                <div className='col-md-8 ml-2'>
+                  <p className='text-secondary'>BHK</p>
+                  <p className='text-secondary'>520 Properties</p>
+                </div>
+
+              </div>
+              <div className='col-md-2 d-flex bg-light m-2 p-3 rounded-2'>
+
+                <div className='col-md-4'>
+                  <h1 className='text-primary'>3</h1>
+                </div>
+                <div className='col-md-8 ml-2'>
+                  <p className='text-secondary'>BHK</p>
+                  <p className='text-secondary'>501 Properties</p>
+                </div>
+
+              </div>
+              <div className='col-md-2 d-flex bg-light m-2 p-3 rounded-2'>
+
+                <div className='col-md-4'>
+                  <h1 className='text-primary'>4</h1>
+                </div>
+                <div className='col-md-8 ml-2'>
+                  <p className='text-secondary'>BHK</p>
+                  <p className='text-secondary'>183 Properties</p>
+                </div>
+
+              </div>
+              <div className='col-md-2 d-flex bg-light m-2 p-3 rounded-2'>
+
+                <div className='col-md-4'>
+                  <h1 className='text-primary'>4+</h1>
+                </div>
+                <div className='col-md-8 ml-2'>
+                  <p className='text-secondary'>BHK</p>
+                  <p className='text-secondary'>138 Properties</p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <div className='container-fluid  mt-4 '>
+        <div className='container  rounded-2 p-2'>
+          <div className='row b1 txt mt-1'>
+            <h5>Get your Dream Home With    <span className='text-danger'>Openplot</span> in Minutes</h5>
+            <p className='text-secondary'>Openplot makes it easy to find the perfect place to call your own.</p>
+          </div>
+          <div className='row b1'>
+            <div className='col-md-12 d-flex'>
+              <div className='col-md-6 '>
+                <div style={{ position: 'relative', maxWidth: '400px' }}>
+                  <img className='rounded-3'
+                    src="https://res.cloudinary.com/dqky2x8gy/image/upload/v1700724133/bg1_ta7l5z.jpg"
+                    alt="Placeholder" />
+                  <div
+                    style={{
+                      position: 'absolute',
+                      top: '25%',
+                      left: '10%',
+                      // transform: 'translate(-70%, 90%)',
+                      //   backgroundColor: '',
+                      padding: '10px',
+                      //borderRadius: '5px',
+
+                    }}>
+                    <p>Find, Buy and Own your Dream Home</p>
+                    <hr />
+                    <p className='text-secondary'>Explore from Independent Houses,
+                      Co-working spaces, Retail Shops, Land, Factories and more</p>
+                  </div>
+                </div>
+
+
+              </div>
+              <div className='col-md-6 bg-light rounded-4 ml-1 p-3' style={{
+                position: 'absolute',
+                top: '250%',
+                left: '43%',
+                // transform: 'translate(-70%, 90%)',
+                //   backgroundColor: '',
+                padding: '10px',
+                //borderRadius: '5px',
+              }}>
+                <div className='row'>
+                  <p>Build Your Dream Home with Openplot in Minutes</p>
+                  <p className='text-secondary'>Openplot revolutionizes home construction by offering an innovative platform that
+                    allows you to design and visualize your dream home quickly and effortlessly.
+                  </p>
+                </div>
+                <div className='row p-1'>
+                  <div className='col-md-12 d-flex'>
+                    <div className='col-md-3'>
+                      <img className='im2' src="https://res.cloudinary.com/dqky2x8gy/image/upload/v1700732116/time_axgxki.jpg" />
+                    </div>
+                    <div className='col-md-9'>
+                      <p className='text-primary'>Time-Saving</p>
+                      <p className='text-secondary'>Openplot is Time-Saver for Property Searches..</p>
+                      <hr />
+                    </div>
+                  </div>
+                </div>
+                <div className='row p-1'>
+                  <div className='col-md-12 d-flex'>
+                    <div className='col-md-3'>
+                      <img className='im2' src="https://res.cloudinary.com/dqky2x8gy/image/upload/v1700732116/graph_r1hysr.jpg" />
+                    </div>
+                    <div className='col-md-9'>
+                      <p className='text-primary'>Realistic Visualizations</p>
+                      <p className='text-secondary'>Openplot offers realistic visuals, depicting your home's final look.</p>
+                      <hr />
+                    </div>
+                  </div>
+                </div>
+                <div className='row p-1'>
+                  <div className='col-md-12 d-flex'>
+                    <div className='col-md-3'>
+                      <img className='im2' src="https://res.cloudinary.com/dqky2x8gy/image/upload/v1700732117/redgrn_lis6ik.jpg" />
+                    </div>
+                    <div className='col-md-9'>
+                      <p className='text-primary'>User-Friendly Interface</p>
+                      <p className='text-secondary'>Attractive design for a seamless user experience.</p>
+                      <hr />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='row txt mt-4'>
+            <h5>Browse our listing and find your  <span className='text-danger'>perfect match</span> </h5>
+            <p className='text-secondary'>We have a wide array of properties to suit any budget and lifestyle.
+              Whether you're looking for a cozy home,
+              an investment property.</p>
+          </div>
+          <div className='row '>
+            <div className='col-md-12 bg1 d-flex'>
+              <div className='col-md-6'>
+                <div className='row p-5'>
+                  <h5>We bring solutions to make      <span className='text-danger'>life easier</span> for our clients</h5>
+                  <p className='text-secondary'>Discover the steps to organizing your properties. Follow our guide and get tips on
+                    best practices when it comes to listing, pricing, and promoting your property.
+                    Stay one step ahead and make sure your properties are always in top condition with our simple steps.</p>
+                  <p className='text-secondary'>Get organized with your business properties and assets. Learn the steps to create a plan,
+                    establish policies, and protect your investments.
+                    Get started on the right track today with our helpful tips and advice.</p>
+                </div>
+                <div className='row '>
+                  <div className='col-md-12 d-flex'>
+                    <div className='col-md-2'>
+                      <img className='im0 ' src="https://res.cloudinary.com/dqky2x8gy/image/upload/v1700735529/faq_bijimc.png" />
+                    </div>
+                    <div className='col-md-10'>
+                      <p className='text-secondary'>Have any Queries? Click Below Link</p>
+                      <h5 ><FaArrowRightLong /><span className='text-primary'>FAQ</span></h5>
+                      <Button className='p-3' variant="primary">See Verified Agents</Button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='col-md-6'>
+                <div className='row p-1 bg-light rounded-3 m-3'>
+                  <div className='col-md-12 d-flex'>
+                    <div className='col-md-3'>
+                      <img className='im2' src="https://res.cloudinary.com/dqky2x8gy/image/upload/v1700739423/book_zm4zny.png" />
+                    </div>
+                    <div className='col-md-9'>
+                      <p className='text-primary'>Evaluate Property</p>
+                      <p className='text-secondary'>Our advanced tools and resources make it easy to determine a property's value.</p>
+                    </div>
+                  </div>
+                </div>
+                <div className='row p-1 bg-light rounded-3 m-3'>
+                  <div className='col-md-12 d-flex'>
+                    <div className='col-md-3'>
+                      <img className='im2' src="https://res.cloudinary.com/dqky2x8gy/image/upload/v1700739423/person_f338rc.png" />
+                    </div>
+                    <div className='col-md-9'>
+                      <p className='text-primary'>Meet Your Agent</p>
+                      <p className='text-secondary'>Our Professional Agents Identify potential risks, and get insights from local experts.</p>
+                    </div>
+                  </div>
+                </div>
+                <div className='row p-1 bg-light rounded-3 m-3'>
+                  <div className='col-md-12 d-flex'>
+                    <div className='col-md-3'>
+                      <img className='im2' src="https://res.cloudinary.com/dqky2x8gy/image/upload/v1700739423/hand_lpfzeo.png" />
+                    </div>
+                    <div className='col-md-9'>
+                      <p className='te
